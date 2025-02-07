@@ -15,6 +15,11 @@ public class ProductsController : Controller
     {
         _context = context;
     }
+    public IActionResult Index(string searchString)
+    {
+        var inventory = _context.Products.Include(p => p.Category).ToList();
+        return View(inventory);
+    }
     public IActionResult Index()
     {
 
