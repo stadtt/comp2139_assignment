@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 html {
   font-size: 14px;
 }
@@ -28,4 +30,27 @@ html {
 
 .sidebar-width {
   width: 20%;
+}
+
+.bg-bg-color {
+  background-color: #F5F4EF;
+}
+
+.bg-subtle-color {
+  background-color: #EBE8E1;
+}
+
+.primary-text-color {
+  color: #EBE8E1;
+}
+
+body {
+  color: #2F302A;
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+.btn-secondary {
+  background-color: #F4F1EA;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.7rem;
 }
