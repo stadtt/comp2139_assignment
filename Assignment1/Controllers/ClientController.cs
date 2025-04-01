@@ -1,6 +1,7 @@
 using System.Text.Json;
 using Assignment1.Data;
 using Assignment1.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
