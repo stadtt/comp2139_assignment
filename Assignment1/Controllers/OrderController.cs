@@ -1,6 +1,7 @@
 using System.Text.Json;
 using Assignment1.Data;
 using Assignment1.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -38,6 +39,7 @@ public class OrderController : Controller
     }
 
     [HttpGet]
+    [Authorize(Roles="User,Admin)")]
     public IActionResult CheckoutOrder()
     {
         try

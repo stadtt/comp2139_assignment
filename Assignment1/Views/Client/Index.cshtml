@@ -77,13 +77,15 @@
     <div class="offcanvas-body font-monospace" id="cart-container">
     </div>
 
+   
     <div class="offcanvas-footer bg-light border-top p-3 d-flex justify-content-end">
-        <a class="btn btn-dark font-monospace"
+        <a  class="btn btn-dark font-monospace"
            asp-action="CheckoutOrder"
            asp-controller="Order">
             Checkout
         </a>
     </div>
+    
 </div>
 
 
@@ -194,6 +196,7 @@
         getProducts();
     });
 
+     
     // ============================== Cart related ==============================
 
     const liveToastElement = $("#liveToast")
@@ -213,6 +216,7 @@
         }
         toastBootstrap.show();
     }
+   
 
     function onAddToCart(e) {
         e.preventDefault();
@@ -249,9 +253,8 @@
             }
         });
     }
-
+   
     
-
   
 </script>
 }
